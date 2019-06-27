@@ -1,3 +1,4 @@
+
 var express = require("express");
 var router = express.Router();
 var path = require("path");
@@ -7,6 +8,7 @@ var cheerio = require("cheerio");
 
 var Comment = require("../models/Comment.js");
 var Article = require("../models/Article.js");
+
 
 router.get("/", function(req, res) {
   res.redirect("/articles");
@@ -154,3 +156,7 @@ router.post("/comment/:id", function(req, res) {
 });
 
 module.exports = router;
+   
+    
+   
+
